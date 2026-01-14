@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .project-name h1 {
+    font-size: 1.8rem;
+}
+
+header .header-right .icon {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header .header-right .icon:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+.posts-container {
+    padding: 20px;
+}
+
+.post {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-header .user-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-header .user-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.post-header .post-time {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.post-content .post-caption {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.post-content .post-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.action-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #4b4fcf;
+}
+
+.action-btn.liked {
+    background-color: #ff8a00;
+}
+
+.comment-section {
+    margin-top: 15px;
+    display: none;
+}
+
+.comment-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.comment-section .submit-comment {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.comment-section .submit-comment:hover {
+    background-color: #4b4fcf;
+}
+
+.share-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.share-message.hidden {
+    display: none;
+}
+
+/* Footer Section (Profile, Logout, Appointment) */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.profile-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #6c5ce7;
+}
+
+.logout-btn, .appointment-btn {
+    padding: 8px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover, .appointment-btn:hover {
+    background-color: #4b4fcf;
+}
+
+.appointment-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff8a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logout-btn, .appointment-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

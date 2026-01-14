@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .header-left h1 {
+    font-size: 1.8rem;
+}
+
+header .header-right a.icon {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header .header-right a.icon:hover {
+    color: #ffcc00;
+}
+
+/* Chat Window Section */
+.chat-container {
+    padding: 20px;
+}
+
+.chat-box {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.messages {
+    max-height: 400px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message.user {
+    background-color: #d1e7ff;
+    align-self: flex-end;
+}
+
+.message.psychologist {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+.chat-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    resize: none;
+    height: 50px;
+}
+
+.send-btn {
+    padding: 10px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.send-btn:hover {
+    background-color: #4b4fcf;
+}
+
+/* Footer Section */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .profile-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer .profile-btn {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-box {
+        width: 100%;
+    }
+
+    .chat-input {
+        width: 70%;
+    }
+}

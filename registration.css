@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.page-header {
+    text-align: center;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 20px 20px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+}
+
+/* Registration Form Container */
+.registration-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registration-form label {
+    font-weight: bold;
+}
+
+.registration-form input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.registration-form button {
+    padding: 12px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/*registration Button Clicked*/
+.registration-form button:hover {
+    background-color: #4b4fcf;
+    transform: scale(1.05);
+}
+
+.registration-form a {
+    margin-top: 20px;
+    text-align: center;
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.registration-form a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .registration-form-container {
+        padding: 20px;
+    }
+
+    .registration-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .registration-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up full vertical space */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c5ce7;
+    padding: 0 20px;
+    height: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+header .header-left h1 {
+    font-size: 0.8rem;
+    line-height: 10px;
+}
+
+header .header-right a.icon {
+    font-size: 0.7rem;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 10px;
+}
+
+header .header-right a.icon:hover {
+    color: #ffcc00;
+}
+
+/* Footer Section */
+footer {
+    height: 5px;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .profile-btn img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+footer .profile-btn {
+    text-decoration: none;
+}
+
+/* Content Section */
+main {
+    flex: 1; /* Pushes footer to the bottom if the content is short */
+    padding-bottom: 50px; /* Ensures last resource is visible above footer */
+}
+
+.resources-list {
+    padding: 20px;
+}
+
+.resource-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.resource-card {
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resource-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.resource-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resource-link {
+    display: block;
+    margin-top: 10px;
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resource-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-card {
+        width: 90%;
+    }
+}

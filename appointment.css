@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .header-left h1 {
+    font-size: 1.8rem;
+}
+
+header .header-right a.icon {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header .header-right a.icon:hover {
+    color: #ffcc00;
+}
+
+/* Search Bar Section */
+.search-container {
+    padding: 5px;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: #4b4fcf;
+}
+
+/* Psychiatrists List Section */
+.psychiatrist-list {
+    padding: 20px;
+}
+
+.psychiatrist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.psychiatrist-card {
+    background-color: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.psychiatrist-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.psychiatrist-info {
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #4b4fcf;
+}
+
+/* Footer Section */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .profile-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer .profile-btn {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .psychiatrist-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .psychiatrist-card {
+        width: 90%;
+    }
+}

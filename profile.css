@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .header-left h1 {
+    font-size: 1.8rem;
+}
+
+header .header-right .icon {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header .header-right .icon:hover {
+    color: #ffcc00;
+}
+
+/* Profile Section */
+.profile-container {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    margin-right: 20px;
+    position: relative;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.edit-profile-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #e07b00;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* User Posts Section */
+.user-posts h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.posts-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post {
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-caption {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Resources Link Section */
+.resources-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resources-link .resources-icon {
+    font-size: 1.2rem;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resources-link .resources-icon:hover {
+    background-color: #4b4fcf;
+}
+
+/* Footer Section */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.profile-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.home-btn {
+    padding: 8px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #4b4fcf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posts-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .resources-link {
+        margin-top: 30px;
+    }
+}
